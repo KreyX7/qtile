@@ -1,0 +1,23 @@
+# Ejemplo de configuración en TOML para Alacritty
+
+[window]
+# Desactiva el título dinámico para que no aparezca el nombre de usuario ni el host.
+dynamic_title = false
+opacity = 0.6 
+# Asigna un símbolo o cualquier texto que prefieras como el título fijo.
+title = "Alacritty"
+dimensions = { columns = 80, lines = 24 }
+
+[font]
+  normal = { family = "JetBrains Mono", style = "Regular" }  # Fuente configurada a DejaVu Sans Monosize = 12.0
+
+[colors]
+[colors.primary]
+# Ajusta la opacidad del fondo (0.0 completamente transparente, 1.0 completamente opaco)
+background = "#1e1e2e"  # Color de fondo
+foreground = "#cdd6f4"  # Color del texto
+
+
+#[clipboard]
+#copy_command = ["xclip", "-selection", "clipboard"]
+#paste_command = ["xclip", "-selection", "clipboard", "-o"]
